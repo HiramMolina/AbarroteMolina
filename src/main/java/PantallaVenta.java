@@ -31,10 +31,10 @@ public class PantallaVenta extends javax.swing.JFrame {
 //    int r=0;
     
     public static final String url = "jdbc:mysql://localhost:3306/puntodeventa";
-        public static final String user = "root";
-        public static final String pass = "admin";
+    public static final String user = "root";
+    public static final String pass = "admin";
     
-            public static Connection getConnection(){
+    public static Connection getConnection(){
             Connection con = null;
 
                 try {
@@ -47,8 +47,7 @@ public class PantallaVenta extends javax.swing.JFrame {
                 }
                 return con;
                     }
-            
-            public static void escribirConectar() {
+    public static void escribirConectar() {
                         try {
                             File archivo = new File("informacion_conexion.txt");
                             archivo.createNewFile();
@@ -67,14 +66,13 @@ public class PantallaVenta extends javax.swing.JFrame {
                         }
                     }
             
-            public static String ObtenerFecha(){
-                        LocalDateTime ahora = LocalDateTime.now();
-                        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd-MM-YYYY HH:mm:ss");
-                        return ahora.format(formato);
-                    }
+    public static String ObtenerFecha(){
+        LocalDateTime ahora = LocalDateTime.now();
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd-MM-YYYY HH:mm:ss");
+        return ahora.format(formato);
+                    }       
             
-            
-            private void limpiarCajas(){ //LIMPIA TODAS LAS CAJAS
+    private void limpiarCajas(){ //LIMPIA TODAS LAS CAJAS
             
             txtId.setText(null);
             txtNombre.setText(null);
@@ -84,7 +82,7 @@ public class PantallaVenta extends javax.swing.JFrame {
             jCantidad.setValue(0);
             escribirLimpiarCajas();
         }
-            private void escribirLimpiarCajas(){
+    private void escribirLimpiarCajas(){
                try {File archivo = new File("informacion_conexion.txt");
                 BufferedWriter writer = new BufferedWriter(new FileWriter(archivo, true));
 
@@ -99,24 +97,23 @@ public class PantallaVenta extends javax.swing.JFrame {
             }
         }
             
-            
-            
-            
-            
             public PantallaVenta() {
         initComponents();
         setDefaultCloseOperation(PantallaVenta.DISPOSE_ON_CLOSE);
+        obtenerFolio();
+        
+        //AGREGAR FECHA A CUADRO DE TEXTO
+        // Formatear la fecha en un String con el mes correcto
+        //String formattedDate = String.format("%d-%02d-%d", calendar.get(Calendar.YEAR), month, calendar.get(Calendar.DAY_OF_MONTH));
+        //txtFecha.setText(formattedDate);
         Calendar calendar = new GregorianCalendar();
         int month = calendar.get(Calendar.MONTH) + 1; // Agregar 1 para obtener el mes correcto
         txtFecha.setText(""+calendar.get(Calendar.YEAR)+"-"+calendar.get(Calendar.MONTH)+"-"+calendar.get(Calendar.DAY_OF_MONTH));
         String formateoFecha = String.format("%d-%02d-%d", calendar.get(Calendar.YEAR), month, calendar.get(Calendar.DAY_OF_MONTH));
-            txtFecha.setText(formateoFecha);
-            
-
-
-// Formatear la fecha en un String con el mes correcto
-//String formattedDate = String.format("%d-%02d-%d", calendar.get(Calendar.YEAR), month, calendar.get(Calendar.DAY_OF_MONTH));
-//txtFecha.setText(formattedDate);
+        txtFecha.setText(formateoFecha);
+        
+        //AGREGAR FOLIO A CUADRO DE TEXTO
+//        obtenerFolio();
         
     }
         
@@ -163,6 +160,8 @@ public class PantallaVenta extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         btnCancelar = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
+        txtFolio = new javax.swing.JTextField();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -225,6 +224,11 @@ public class PantallaVenta extends javax.swing.JFrame {
         txtFecha.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         txtFecha.setForeground(new java.awt.Color(0, 0, 255));
         txtFecha.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtFecha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtFechaActionPerformed(evt);
+            }
+        });
 
         jLabel8.setText("$");
 
@@ -236,6 +240,15 @@ public class PantallaVenta extends javax.swing.JFrame {
                 btnCancelarActionPerformed(evt);
             }
         });
+
+        jLabel10.setText("Folio:");
+
+        txtFolio.setEditable(false);
+        txtFolio.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
+        txtFolio.setForeground(new java.awt.Color(204, 0, 0));
+        txtFolio.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtFolio.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        txtFolio.setVerifyInputWhenFocusTarget(false);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -258,7 +271,7 @@ public class PantallaVenta extends javax.swing.JFrame {
                                 .addComponent(jLabel8)
                                 .addGap(2, 2, 2)))
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtNombre)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
                             .addComponent(txtPrecio, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtId, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jCantidad))
@@ -280,15 +293,23 @@ public class PantallaVenta extends javax.swing.JFrame {
                                 .addComponent(btnCancelar)
                                 .addGap(23, 23, 23))))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(0, 410, Short.MAX_VALUE)
-                        .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtFecha, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE)
+                            .addComponent(txtFolio))))
                 .addGap(14, 14, 14))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(txtFolio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(16, 16, 16)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -314,7 +335,7 @@ public class PantallaVenta extends javax.swing.JFrame {
                     .addComponent(jCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAggVenta)
                     .addComponent(btnCancelar))
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(231, Short.MAX_VALUE))
         );
 
         jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -337,8 +358,8 @@ public class PantallaVenta extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -349,7 +370,7 @@ public class PantallaVenta extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 354, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 560, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -365,7 +386,7 @@ public class PantallaVenta extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-//BOTON BUSCAR _________________________________________________________________________BOTON BUSCAR___________________________________________
+//BOTON BUSCAR ID_________________________________________________________________________BOTON BUSCAR___________________________________________
     private void btnBuscarCodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarCodActionPerformed
 //BOTON BUSCAR _________________________________________________________________________BOTON BUSCAR___________________________________________
     Connection con = getConnection();
@@ -391,7 +412,7 @@ public class PantallaVenta extends javax.swing.JFrame {
             System.err.println(e);
         }
     }//GEN-LAST:event_btnBuscarCodActionPerformed
-private void escribirbtnBuscarID(){
+    private void escribirbtnBuscarID(){
                try {File archivo = new File("informacion_conexion.txt");
                 BufferedWriter writer = new BufferedWriter(new FileWriter(archivo, true));
 
@@ -407,9 +428,9 @@ private void escribirbtnBuscarID(){
         }
 
 
-//BOTON BUSCAR _________________________________________________________________________BOTON BUSCAR___________________________________________
+//BOTON BUSCAR NOMBRE_________________________________________________________________________BOTON BUSCAR___________________________________________
     private void btnBuscarProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarProdActionPerformed
-//BOTON BUSCAR _________________________________________________________________________BOTON BUSCAR___________________________________________
+//BOTON BUSCAR NOMBRE_________________________________________________________________________BOTON BUSCAR___________________________________________
         Connection con = getConnection();
      
         try {
@@ -421,8 +442,8 @@ private void escribirbtnBuscarID(){
                 txtId.setText(rs.getString("IdProducto"));
                 txtNombre.setText(rs.getString("nombreProducto"));
                 txtPrecio.setText(rs.getString("precioProducto"));
-//                cbxCategoria.setSelectedItem(rs.getString("categoriaProducto"));
-//                txtProveedor.setText(rs.getString("IdProveedor"));
+//              cbxCategoria.setSelectedItem(rs.getString("categoriaProducto"));
+//              txtProveedor.setText(rs.getString("IdProveedor"));
                 txtExistencia.setText(rs.getString("existencia"));
                 escribirbtnBuscarNombre();
             }
@@ -433,7 +454,6 @@ private void escribirbtnBuscarID(){
             System.err.println(e);
         }
     }//GEN-LAST:event_btnBuscarProdActionPerformed
-
     private void escribirbtnBuscarNombre(){
                try {File archivo = new File("informacion_conexion.txt");
                 BufferedWriter writer = new BufferedWriter(new FileWriter(archivo, true));
@@ -449,13 +469,12 @@ private void escribirbtnBuscarID(){
             }
         }
     
-    
     private void btnAggVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAggVentaActionPerformed
        
         Connection con = getConnection();
         
         try {
-            ps = con.prepareStatement("INSERT INTO venta(nombreProducto,cantidadProducto,precioProducto,IdProducto) VALUES (?,?,?,?)");
+            ps = con.prepareStatement("INSERT INTO venta(producto,cantidad,precio,IdProducto) VALUES (?,?,?,?)");
             
             ps.setString(1, txtNombre.getText());
             ps.setString(2, jCantidad.getValue().toString());
@@ -498,7 +517,6 @@ private void escribirbtnBuscarID(){
         }
         
     }//GEN-LAST:event_btnAggVentaActionPerformed
-
     private void escribirbtnAggVenta(){
                try {File archivo = new File("informacion_conexion.txt");
                 BufferedWriter writer = new BufferedWriter(new FileWriter(archivo, true));
@@ -514,13 +532,10 @@ private void escribirbtnBuscarID(){
             }
         }
     
-    
-    
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
         limpiarCajas();
         escribirBtnCancelar();
     }//GEN-LAST:event_btnCancelarActionPerformed
-
     private void escribirBtnCancelar(){
                try {File archivo = new File("informacion_conexion.txt");
                 BufferedWriter writer = new BufferedWriter(new FileWriter(archivo, true));
@@ -536,8 +551,10 @@ private void escribirbtnBuscarID(){
             }
         }
     
-    
-    
+    private void txtFechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFechaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFechaActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -570,6 +587,22 @@ private void escribirbtnBuscarID(){
         });
     }
 
+    public void obtenerFolio(){
+            Connection con = getConnection();
+        try {
+            ps = con.prepareStatement("SELECT folioticket FROM ticket ORDER BY folioticket desc limit 1");
+            rs = ps.executeQuery();
+            
+            if (rs.next()) {
+                txtFolio.setText(rs.getString("folioticket"));
+            } else {
+            JOptionPane.showMessageDialog(null,"Cayó pedo en la matrix");
+            }
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null,"No se encontró folio");
+            }
+        }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAggVenta;
     private javax.swing.JButton btnBuscarCod;
@@ -580,6 +613,7 @@ private void escribirbtnBuscarID(){
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem2;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -593,6 +627,7 @@ private void escribirbtnBuscarID(){
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField txtExistencia;
     private javax.swing.JTextField txtFecha;
+    private javax.swing.JTextField txtFolio;
     private javax.swing.JTextField txtId;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtPrecio;

@@ -363,3 +363,51 @@ Contraseña: admin
   Usuario: root
   Contraseña: admin
 09-12-2023 20:38:08 Boton actualizar tabla
+09-12-2023 23:46:01 Conexión exitosa a la base de datos
+09-12-2023 23:46:01 Boton buscar por ID
+09-12-2023 23:46:06 Conexión exitosa a la base de datos
+09-12-2023 23:47:19 Conexión exitosa a la base de datos
+09-12-2023 23:47:19 Boton buscar por ID
+09-12-2023 23:47:24 Conexión exitosa a la base de datos
+09-12-2023 23:47:25 Boton limpiar cajas
+09-12-2023 23:47:25 Boton agregar venta
+09-12-2023 23:47:25 Conexión exitosa a la base de datos
+09-12-2023 23:47:27 Conexión exitosa a la base de datos
+09-12-2023 23:47:27 Boton buscar por ID
+09-12-2023 23:47:32 Conexión exitosa a la base de datos
+09-12-2023 23:47:33 Boton limpiar cajas
+09-12-2023 23:47:33 Boton agregar venta
+09-12-2023 23:47:33 Conexión exitosa a la base de datos
+09-12-2023 23:47:35 Conexión exitosa a la base de datos
+09-12-2023 23:47:35 Boton buscar por ID
+09-12-2023 23:47:38 Boton limpiar cajas
+09-12-2023 23:47:38 Boton Cancelar
+10-12-2023 00:21:41 Conexión exitosa a la base de datos
+10-12-2023 00:28:05 Conexión exitosa a la base de datos
+10-12-2023 00:43:25 Conexión exitosa a la base de datos
+10-12-2023 00:43:39 Conexión exitosa a la base de datos
+10-12-2023 00:44:19 Conexión exitosa a la base de datos
+10-12-2023 00:44:37 Conexión exitosa a la base de datos
+10-12-2023 00:45:42 Conexión exitosa a la base de datos
+10-12-2023 00:50:22 Conexión exitosa a la base de datos
+10-12-2023 00:57:37 Conexión exitosa a la base de datos
+10-12-2023 00:58:42 Conexión exitosa a la base de datos
+10-12-2023 01:00:30 Conexión exitosa a la base de datos
+10-12-2023 01:02:27Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+10-12-2023 01:02:27 Boton Buscar por ID
+10-12-2023 01:05:19 Conexión exitosa a la base de datos
+10-12-2023 01:06:07 Conexión exitosa a la base de datos
+10-12-2023 01:06:46 Conexión exitosa a la base de datos
+10-12-2023 01:09:52 Conexión exitosa a la base de datos
+10-12-2023 01:11:08 Conexión exitosa a la base de datos
+10-12-2023 01:12:13 Conexión exitosa a la base de datos
+10-12-2023 01:12:41 Conexión exitosa a la base de datos
+10-12-2023 01:15:01 Conexión exitosa a la base de datos
+10-12-2023 01:15:32 Conexión exitosa a la base de datos
+10-12-2023 01:16:53 Conexión exitosa a la base de datos
+10-12-2023 01:17:48 Conexión exitosa a la base de datos
+10-12-2023 01:18:44 Conexión exitosa a la base de datos
+10-12-2023 01:22:56 Conexión exitosa a la base de datos
