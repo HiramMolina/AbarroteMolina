@@ -1,0 +1,365 @@
+Conexión exitosa a la base de datos el dia: 30-11-2023 21:52:29
+URL: jdbc:mysql://localhost:3306/puntodeventa
+Usuario: root
+Contraseña: admin
+30-11-2023 21:52:30 Boton actualizar tabla
+Conexión exitosa a la base de datos el dia: 30-11-2023 21:52:34
+URL: jdbc:mysql://localhost:3306/puntodeventa
+Usuario: root
+Contraseña: admin
+30-11-2023 21:52:34 Boton Buscar por ID
+Conexión exitosa a la base de datos el dia: 30-11-2023 21:52:41
+URL: jdbc:mysql://localhost:3306/puntodeventa
+Usuario: root
+Contraseña: admin
+30-11-2023 21:52:42 Boton Cajas limpiadas
+30-11-2023 21:52:42 Boton modificar producto
+Conexión exitosa a la base de datos el dia: 30-11-2023 21:52:42
+URL: jdbc:mysql://localhost:3306/puntodeventa
+Usuario: root
+Contraseña: admin
+Conexión exitosa a la base de datos el dia: 30-11-2023 21:52:45
+URL: jdbc:mysql://localhost:3306/puntodeventa
+Usuario: root
+Contraseña: admin
+30-11-2023 21:52:45 Boton Buscar por ID
+30-11-2023 21:52:46 Boton Cajas limpiadas
+30-11-2023 21:52:46 Boton limpiar cajas
+Conexión exitosa a la base de datos el dia: 30-11-2023 21:52:48
+URL: jdbc:mysql://localhost:3306/puntodeventa
+Usuario: root
+Contraseña: admin
+Conexión exitosa a la base de datos el dia: 30-11-2023 21:53:12
+URL: jdbc:mysql://localhost:3306/puntodeventa
+Usuario: root
+Contraseña: admin
+30-11-2023 21:53:13 Boton Cajas limpiadas
+30-11-2023 21:53:13 Boton Guardar productos
+Conexión exitosa a la base de datos el dia: 30-11-2023 21:53:13
+URL: jdbc:mysql://localhost:3306/puntodeventa
+Usuario: root
+Contraseña: admin
+Conexión exitosa a la base de datos el dia: 30-11-2023 21:53:14
+URL: jdbc:mysql://localhost:3306/puntodeventa
+Usuario: root
+Contraseña: admin
+30-11-2023 21:53:14 Boton actualizar tabla
+30-11-2023 22:36:50Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+30-11-2023 22:36:50 Boton Buscar por ID
+30-11-2023 22:36:53Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+30-11-2023 22:36:53 Boton actualizar tabla
+30-11-2023 22:36:56 Boton Cajas limpiadas
+30-11-2023 22:36:56 Boton limpiar cajas
+30-11-2023 22:40:58 Boton abrir agenda
+30-11-2023 22:41:09 Boton abrir agenda
+30-11-2023 22:41:13Conexión exitosa a la base de datos
+30-11-2023 22:41:13 Boton buscar por ID
+30-11-2023 22:41:17Conexión exitosa a la base de datos
+30-11-2023 22:41:19 Boton limpiar cajas
+30-11-2023 22:41:19 Boton agregar venta
+30-11-2023 22:41:19Conexión exitosa a la base de datos
+30-11-2023 22:41:27Conexión exitosa a la base de datos
+30-11-2023 22:41:36Conexión exitosa a la base de datos
+30-11-2023 22:41:36 Boton buscar por ID
+30-11-2023 22:41:42Conexión exitosa a la base de datos
+30-11-2023 22:41:44 Boton limpiar cajas
+30-11-2023 22:41:44 Boton agregar venta
+30-11-2023 22:41:44Conexión exitosa a la base de datos
+30-11-2023 22:41:47Conexión exitosa a la base de datos
+30-11-2023 22:41:47 Boton buscar por ID
+30-11-2023 22:41:52Conexión exitosa a la base de datos
+30-11-2023 22:41:53 Boton limpiar cajas
+30-11-2023 22:41:53 Boton agregar venta
+30-11-2023 22:41:53Conexión exitosa a la base de datos
+30-11-2023 22:41:57Conexión exitosa a la base de datos
+30-11-2023 22:41:57 Boton buscar por ID
+30-11-2023 22:42:00 Boton limpiar cajas
+30-11-2023 22:42:00 Boton Cancelar
+30-11-2023 22:42:05 Boton Cajas limpiadas
+30-11-2023 22:42:05 Boton limpiar cajas
+30-11-2023 22:42:07Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+30-11-2023 22:42:07 Boton actualizar tabla
+03-12-2023 16:11:19Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+03-12-2023 16:11:19 Boton actualizar tabla
+03-12-2023 16:11:23Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+03-12-2023 16:11:23 Boton Buscar por ID
+03-12-2023 16:11:32Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+03-12-2023 16:11:33 Boton Cajas limpiadas
+03-12-2023 16:11:33 Boton modificar producto
+03-12-2023 16:11:33Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+03-12-2023 16:11:35Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+03-12-2023 16:11:35 Boton actualizar tabla
+03-12-2023 16:11:43Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+03-12-2023 16:11:51Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+03-12-2023 16:11:51 Boton Buscar por ID
+03-12-2023 16:11:52Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+03-12-2023 16:11:53 Boton Cajas limpiadas
+03-12-2023 16:11:53 Boton eliminar producto
+03-12-2023 16:11:53Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+03-12-2023 16:11:55Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+03-12-2023 16:11:55 Boton actualizar tabla
+03-12-2023 16:12:07 Boton abrir agenda
+03-12-2023 16:12:12 Boton abrir agenda
+03-12-2023 16:12:16 Conexión exitosa a la base de datos
+03-12-2023 16:12:16 Boton buscar por ID
+04-12-2023 23:30:08Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:30:08 Boton Buscar por ID
+04-12-2023 23:30:09Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:30:09 Boton actualizar tabla
+04-12-2023 23:30:16Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:30:29Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:30:36Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:30:44Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:30:46Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:30:46 Boton actualizar tabla
+04-12-2023 23:30:47Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:30:47 Boton actualizar tabla
+04-12-2023 23:30:47Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:30:47 Boton actualizar tabla
+04-12-2023 23:30:47Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:30:47 Boton actualizar tabla
+04-12-2023 23:30:52Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:30:52 Boton actualizar tabla
+04-12-2023 23:33:06Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:33:06 Boton actualizar tabla
+04-12-2023 23:33:09Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:33:09 Boton Buscar por ID
+04-12-2023 23:33:20Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:33:24Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:33:26Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:33:26 Boton actualizar tabla
+04-12-2023 23:33:27Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:33:27 Boton actualizar tabla
+04-12-2023 23:33:27Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:33:27 Boton actualizar tabla
+04-12-2023 23:33:28Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:33:28 Boton actualizar tabla
+04-12-2023 23:33:28Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:33:28 Boton actualizar tabla
+04-12-2023 23:33:29Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:33:29 Boton Buscar por ID
+04-12-2023 23:33:31 Boton Cajas limpiadas
+04-12-2023 23:33:31 Boton limpiar cajas
+04-12-2023 23:33:33Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:33:33 Boton Buscar por ID
+04-12-2023 23:34:44Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:34:44 Boton actualizar tabla
+04-12-2023 23:37:00Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:37:00 Boton Buscar por ID
+04-12-2023 23:37:02Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:37:02 Boton actualizar tabla
+04-12-2023 23:37:08Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:38:46Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:38:46 Boton actualizar tabla
+04-12-2023 23:38:48Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:38:48 Boton Buscar por ID
+04-12-2023 23:38:53Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:38:55 Boton Cajas limpiadas
+04-12-2023 23:38:55 Boton modificar producto
+04-12-2023 23:38:55Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:38:56Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+04-12-2023 23:38:56 Boton actualizar tabla
+07-12-2023 23:47:06 Boton abrir agenda
+07-12-2023 23:47:08 Conexión exitosa a la base de datos
+07-12-2023 23:47:08 Boton buscar por ID
+07-12-2023 23:47:22 Conexión exitosa a la base de datos
+07-12-2023 23:47:24 Boton limpiar cajas
+07-12-2023 23:47:24 Boton agregar venta
+07-12-2023 23:47:24 Conexión exitosa a la base de datos
+07-12-2023 23:47:25 Conexión exitosa a la base de datos
+07-12-2023 23:47:25 Boton buscar por ID
+07-12-2023 23:47:31Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+07-12-2023 23:47:31 Boton actualizar tabla
+07-12-2023 23:47:33Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+07-12-2023 23:47:33 Boton Buscar por ID
+07-12-2023 23:47:37Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+07-12-2023 23:47:39 Boton Cajas limpiadas
+07-12-2023 23:47:39 Boton modificar producto
+07-12-2023 23:47:39Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+07-12-2023 23:47:39Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+07-12-2023 23:47:39 Boton actualizar tabla
+07-12-2023 23:47:44Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+07-12-2023 23:47:44 Boton Buscar por ID
+07-12-2023 23:47:51Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+07-12-2023 23:47:52 Boton Cajas limpiadas
+07-12-2023 23:47:52 Boton modificar producto
+07-12-2023 23:47:52Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+07-12-2023 23:47:52Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+07-12-2023 23:47:52 Boton actualizar tabla
+07-12-2023 23:48:51Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+07-12-2023 23:48:51 Boton Buscar por ID
+07-12-2023 23:48:55 Boton Cajas limpiadas
+07-12-2023 23:48:55 Boton limpiar cajas
+07-12-2023 23:48:59 Boton abrir agenda
+09-12-2023 20:38:06Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+09-12-2023 20:38:06 Boton Buscar por ID
+09-12-2023 20:38:08Conexión exitosa a la base de datos
+  URL: jdbc:mysql://localhost:3306/puntodeventa
+  Usuario: root
+  Contraseña: admin
+09-12-2023 20:38:08 Boton actualizar tabla
