@@ -655,7 +655,7 @@ try {
             modelo.addColumn("Existencia");
             escribirBtnActualizarTabla();
             
-            while (rs.next()) { //PARA PROPORCIONAR LOS DATOS DE CADA FILA CADA CICLO
+            while (rs.next()) { //PARA PROPORCIONAR LOS DATOS DE CADA FILA CADA CICLO //El puntero empieza a recorrer lo obtenido en rs
                 Object[] filas = new Object[cantidadColumnas]; //IMPORTANTE DECLARAR EL TAMAÑO DE LOS ARREGLOS 
                 // VVVVVVVV PASAR LOS DATOS A TIPO OBJETO
                 for(int i = 0; i < cantidadColumnas; i++)

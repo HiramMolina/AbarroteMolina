@@ -1,4 +1,5 @@
 
+import com.mysql.cj.x.protobuf.MysqlxPrepare;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -7,11 +8,16 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import static java.sql.Statement.RETURN_GENERATED_KEYS;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 //import static producto.getConnection;
 //import static producto.getConnection;
@@ -101,6 +107,7 @@ public class PantallaVenta extends javax.swing.JFrame {
         initComponents();
         setDefaultCloseOperation(PantallaVenta.DISPOSE_ON_CLOSE);
         obtenerFolio();
+        agregarFolio();
         
         //AGREGAR FECHA A CUADRO DE TEXTO
         // Formatear la fecha en un String con el mes correcto
@@ -162,6 +169,9 @@ public class PantallaVenta extends javax.swing.JFrame {
         btnCancelar = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         txtFolio = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jtVentas = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
 
         jCheckBoxMenuItem1.setSelected(true);
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
@@ -250,13 +260,33 @@ public class PantallaVenta extends javax.swing.JFrame {
         txtFolio.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         txtFolio.setVerifyInputWhenFocusTarget(false);
 
+        jtVentas.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Codigo Prod.", "Producto", "Cantidad", "Precio"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jtVentas.setToolTipText("");
+        jScrollPane1.setViewportView(jtVentas);
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(14, 14, 14)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel3Layout.createSequentialGroup()
@@ -271,7 +301,7 @@ public class PantallaVenta extends javax.swing.JFrame {
                                 .addComponent(jLabel8)
                                 .addGap(2, 2, 2)))
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+                            .addComponent(txtNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
                             .addComponent(txtPrecio, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtId, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jCantidad))
@@ -335,11 +365,21 @@ public class PantallaVenta extends javax.swing.JFrame {
                     .addComponent(jCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAggVenta)
                     .addComponent(btnCancelar))
-                .addContainerGap(231, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
+
+        jButton1.setText("Generar ticket");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jPanel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -350,7 +390,11 @@ public class PantallaVenta extends javax.swing.JFrame {
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(35, 35, 35))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -358,19 +402,21 @@ public class PantallaVenta extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 575, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton1)
+                .addContainerGap(28, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 614, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 616, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 560, Short.MAX_VALUE)
+            .addComponent(jDesktopPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 703, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -386,7 +432,7 @@ public class PantallaVenta extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-//BOTON BUSCAR ID_________________________________________________________________________BOTON BUSCAR___________________________________________
+//BOTON BUSCAR ID_______________________________________________________________________BOTON BUSCAR___________________________________________
     private void btnBuscarCodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarCodActionPerformed
 //BOTON BUSCAR _________________________________________________________________________BOTON BUSCAR___________________________________________
     Connection con = getConnection();
@@ -473,49 +519,59 @@ public class PantallaVenta extends javax.swing.JFrame {
        
         Connection con = getConnection();
         
-        try {
-            ps = con.prepareStatement("INSERT INTO venta(producto,cantidad,precio,IdProducto) VALUES (?,?,?,?)");
-            
-            ps.setString(1, txtNombre.getText());
-            ps.setString(2, jCantidad.getValue().toString());
-            ps.setString(3, txtPrecio.getText());
-            ps.setString(4, txtId.getText());
+//        try {
+//            String sql = "INSERT INTO ticket(total) VALUES (?)";
+//            ps = con.prepareStatement(sql);
+//            ps.setString(1, "relleno");
+//            
+//            int AffectedRows = ps.executeUpdate();
+//            
+//            if (AffectedRows == 0) {
+//                JOptionPane.showMessageDialog(null, "Ninguna fila afectada");
+//            } else {
+                    try {
+                    ps = con.prepareStatement("INSERT INTO venta(producto,cantidad,precio,IdProducto,folio) VALUES (?,?,?,?,?)");
 
-            
+                    ps.setString(1, txtNombre.getText());
+                    ps.setString(2, jCantidad.getValue().toString());
+                    ps.setString(3, txtPrecio.getText());
+                    ps.setString(4, txtId.getText());
+                    ps.setString(5, txtFolio.getText());
 
-            //Ejecutar consulta
-            //Igualamos a Int si se ejecutó o no correctamente
-            int res = ps.executeUpdate();
+
+                    //Ejecutar consulta
+                    //Igualamos a Int si se ejecutó o no correctamente
+                    int res = ps.executeUpdate();
+                    if (res > 0) {
+                    // Restar la cantidad vendida de la tabla de productos
+                    int cantidadVendida = Integer.parseInt(jCantidad.getValue().toString());
+                    int idProducto = Integer.parseInt(txtId.getText());
+
+                    ps = con.prepareStatement("UPDATE producto SET existencia = existencia - ? WHERE IdProducto = ?");
+                    ps.setInt(1, cantidadVendida);
+                    ps.setInt(2, idProducto);
+
+                        int resultadoUpdate = ps.executeUpdate();
+
+                            if (resultadoUpdate > 0) {
+                                JOptionPane.showMessageDialog(null, "Producto a venta. Existencias actualizadas.");
+                                limpiarCajas();
+                                escribirbtnAggVenta();
+                            } else {
+                                JOptionPane.showMessageDialog(null, "Venta exitosa pero no se pudo actualizar la existencia.");
+                                limpiarCajas();
+                            }
+                    }else{
+                    JOptionPane.showMessageDialog(null, "Venta invalida");
+                    limpiarCajas();
+                    }
+        //          con.close();
+        //          con = getConnection();
+
+                        } catch (Exception e) {
+                            System.err.println(e);
+                        }
             
-            if (res > 0) {
-            // Restar la cantidad vendida de la tabla de productos
-            int cantidadVendida = Integer.parseInt(jCantidad.getValue().toString());
-            int idProducto = Integer.parseInt(txtId.getText());
-            
-            ps = con.prepareStatement("UPDATE producto SET existencia = existencia - ? WHERE IdProducto = ?");
-            ps.setInt(1, cantidadVendida);
-            ps.setInt(2, idProducto);
-            
-            int resultadoUpdate = ps.executeUpdate();
-            
-            if (resultadoUpdate > 0) {
-                JOptionPane.showMessageDialog(null, "Producto a venta. Existencias actualizadas.");
-                limpiarCajas();
-                escribirbtnAggVenta();
-            } else {
-                JOptionPane.showMessageDialog(null, "Venta exitosa pero no se pudo actualizar la existencia.");
-                limpiarCajas();
-            }
-            }else{
-                JOptionPane.showMessageDialog(null, "Venta invalida");
-                limpiarCajas();
-            }
-            con.close();
-            con = getConnection();
-        } catch (Exception e) {
-            System.err.println(e);
-        }
-        
     }//GEN-LAST:event_btnAggVentaActionPerformed
     private void escribirbtnAggVenta(){
                try {File archivo = new File("informacion_conexion.txt");
@@ -555,6 +611,10 @@ public class PantallaVenta extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtFechaActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -590,24 +650,40 @@ public class PantallaVenta extends javax.swing.JFrame {
     public void obtenerFolio(){
             Connection con = getConnection();
         try {
-            ps = con.prepareStatement("SELECT folioticket FROM ticket ORDER BY folioticket desc limit 1");
+            ps = con.prepareStatement("SELECT idTicket FROM ticket ORDER BY idTicket desc limit 1");
             rs = ps.executeQuery();
             
             if (rs.next()) {
-                txtFolio.setText(rs.getString("folioticket"));
+                txtFolio.setText(rs.getString("idTicket"));
             } else {
             JOptionPane.showMessageDialog(null,"Cayó pedo en la matrix");
             }
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null,"No se encontró folio");
             }
+        
         }
+    
+    private void agregarFolio() {
+         Connection con = getConnection();
+        
+        try {
+            String sql = "INSERT INTO ticket(total) VALUES (?)";
+            ps = con.prepareStatement(sql);
+            ps.setString(1, "relleno");
+            
+            int AffectedRows = ps.executeUpdate();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "No es posible agregar nuevo folio");
+        }
+    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAggVenta;
     private javax.swing.JButton btnBuscarCod;
     private javax.swing.JButton btnBuscarProd;
     private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton jButton1;
     private javax.swing.JSpinner jCantidad;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem2;
@@ -625,6 +701,8 @@ public class PantallaVenta extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jtVentas;
     private javax.swing.JTextField txtExistencia;
     private javax.swing.JTextField txtFecha;
     private javax.swing.JTextField txtFolio;
@@ -632,4 +710,6 @@ public class PantallaVenta extends javax.swing.JFrame {
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtPrecio;
     // End of variables declaration//GEN-END:variables
+
+    
 }

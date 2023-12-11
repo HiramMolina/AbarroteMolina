@@ -411,3 +411,199 @@ Contraseña: admin
 10-12-2023 01:17:48 Conexión exitosa a la base de datos
 10-12-2023 01:18:44 Conexión exitosa a la base de datos
 10-12-2023 01:22:56 Conexión exitosa a la base de datos
+11-12-2023 08:58:43 Conexión exitosa a la base de datos
+11-12-2023 09:00:11 Conexión exitosa a la base de datos
+11-12-2023 09:00:44 Conexión exitosa a la base de datos
+11-12-2023 09:02:34 Conexión exitosa a la base de datos
+11-12-2023 09:22:42 Conexión exitosa a la base de datos
+11-12-2023 09:22:44 Conexión exitosa a la base de datos
+11-12-2023 09:22:44 Boton buscar por ID
+11-12-2023 09:22:50 Conexión exitosa a la base de datos
+11-12-2023 09:22:51 Boton limpiar cajas
+11-12-2023 09:22:51 Boton agregar venta
+11-12-2023 09:22:51 Conexión exitosa a la base de datos
+11-12-2023 09:37:39 Conexión exitosa a la base de datos
+11-12-2023 09:37:47 Conexión exitosa a la base de datos
+11-12-2023 09:38:11 Conexión exitosa a la base de datos
+11-12-2023 09:39:22 Conexión exitosa a la base de datos
+11-12-2023 09:39:25 Conexión exitosa a la base de datos
+11-12-2023 09:40:22 Conexión exitosa a la base de datos
+11-12-2023 09:40:25 Conexión exitosa a la base de datos
+11-12-2023 09:40:25 Boton buscar por ID
+11-12-2023 09:40:31 Conexión exitosa a la base de datos
+11-12-2023 09:40:35 Boton limpiar cajas
+11-12-2023 09:40:35 Boton agregar venta
+11-12-2023 09:41:33 Conexión exitosa a la base de datos
+11-12-2023 09:41:36 Conexión exitosa a la base de datos
+11-12-2023 09:41:38 Conexión exitosa a la base de datos
+11-12-2023 09:41:38 Boton buscar por ID
+11-12-2023 09:41:43 Conexión exitosa a la base de datos
+11-12-2023 09:41:46 Boton limpiar cajas
+11-12-2023 09:41:46 Boton agregar venta
+11-12-2023 09:44:48 Conexión exitosa a la base de datos
+11-12-2023 09:44:59 Conexión exitosa a la base de datos
+11-12-2023 09:45:02 Conexión exitosa a la base de datos
+11-12-2023 09:45:02 Boton buscar por ID
+11-12-2023 09:45:08 Conexión exitosa a la base de datos
+11-12-2023 09:45:30 Boton limpiar cajas
+11-12-2023 09:45:30 Boton agregar venta
+11-12-2023 09:45:52 Conexión exitosa a la base de datos
+11-12-2023 09:45:55 Conexión exitosa a la base de datos
+11-12-2023 09:45:55 Boton buscar por ID
+11-12-2023 09:45:59 Conexión exitosa a la base de datos
+11-12-2023 09:45:59 Boton buscar por ID
+11-12-2023 09:46:03 Conexión exitosa a la base de datos
+11-12-2023 09:46:06 Boton limpiar cajas
+11-12-2023 09:46:06 Boton agregar venta
+11-12-2023 10:06:18 Conexión exitosa a la base de datos
+11-12-2023 10:06:20 Conexión exitosa a la base de datos
+11-12-2023 10:06:20 Boton buscar por ID
+11-12-2023 10:06:23 Conexión exitosa a la base de datos
+11-12-2023 10:06:24 Boton limpiar cajas
+11-12-2023 10:06:24 Boton agregar venta
+11-12-2023 10:06:54 Conexión exitosa a la base de datos
+11-12-2023 10:06:56 Conexión exitosa a la base de datos
+11-12-2023 10:06:56 Boton buscar por ID
+11-12-2023 10:07:01 Conexión exitosa a la base de datos
+11-12-2023 10:07:02 Boton limpiar cajas
+11-12-2023 10:07:02 Boton agregar venta
+11-12-2023 10:07:04 Conexión exitosa a la base de datos
+11-12-2023 10:07:04 Boton buscar por ID
+11-12-2023 10:26:50 Conexión exitosa a la base de datos
+11-12-2023 10:26:51 Conexión exitosa a la base de datos
+11-12-2023 10:26:51 Boton buscar por ID
+11-12-2023 10:26:55 Conexión exitosa a la base de datos
+11-12-2023 10:26:57 Boton limpiar cajas
+11-12-2023 10:26:57 Boton agregar venta
+11-12-2023 10:40:08 Conexión exitosa a la base de datos
+11-12-2023 10:40:12 Conexión exitosa a la base de datos
+11-12-2023 10:40:12 Boton buscar por ID
+11-12-2023 10:40:15 Conexión exitosa a la base de datos
+11-12-2023 10:47:13 Conexión exitosa a la base de datos
+11-12-2023 10:47:16 Conexión exitosa a la base de datos
+11-12-2023 10:47:16 Boton buscar por ID
+11-12-2023 10:47:20 Conexión exitosa a la base de datos
+11-12-2023 10:47:35 Conexión exitosa a la base de datos
+11-12-2023 10:53:17 Conexión exitosa a la base de datos
+11-12-2023 10:53:19 Conexión exitosa a la base de datos
+11-12-2023 10:53:19 Boton buscar por ID
+11-12-2023 10:53:21 Conexión exitosa a la base de datos
+11-12-2023 10:54:00 Conexión exitosa a la base de datos
+11-12-2023 10:54:02 Conexión exitosa a la base de datos
+11-12-2023 10:54:02 Boton buscar por ID
+11-12-2023 10:54:05 Conexión exitosa a la base de datos
+11-12-2023 10:54:47 Conexión exitosa a la base de datos
+11-12-2023 10:54:49 Conexión exitosa a la base de datos
+11-12-2023 10:54:49 Boton buscar por ID
+11-12-2023 10:54:52 Conexión exitosa a la base de datos
+11-12-2023 10:58:01 Conexión exitosa a la base de datos
+11-12-2023 10:58:11 Conexión exitosa a la base de datos
+11-12-2023 10:58:11 Boton buscar por ID
+11-12-2023 10:58:15 Conexión exitosa a la base de datos
+11-12-2023 10:58:19 Boton limpiar cajas
+11-12-2023 10:58:19 Boton agregar venta
+11-12-2023 10:58:30 Conexión exitosa a la base de datos
+11-12-2023 10:58:30 Boton buscar por ID
+11-12-2023 10:58:32 Conexión exitosa a la base de datos
+11-12-2023 10:58:35 Boton limpiar cajas
+11-12-2023 10:58:35 Boton agregar venta
+11-12-2023 10:58:36 Conexión exitosa a la base de datos
+11-12-2023 10:58:36 Boton buscar por ID
+11-12-2023 10:58:53 Conexión exitosa a la base de datos
+11-12-2023 10:58:53 Boton buscar por ID
+11-12-2023 10:59:04 Conexión exitosa a la base de datos
+11-12-2023 10:59:06 Boton limpiar cajas
+11-12-2023 10:59:06 Boton agregar venta
+11-12-2023 10:59:43 Conexión exitosa a la base de datos
+11-12-2023 10:59:55 Conexión exitosa a la base de datos
+11-12-2023 10:59:55 Boton buscar por ID
+11-12-2023 10:59:59 Conexión exitosa a la base de datos
+11-12-2023 11:00:04 Boton limpiar cajas
+11-12-2023 11:00:04 Boton agregar venta
+11-12-2023 11:00:10 Conexión exitosa a la base de datos
+11-12-2023 11:00:10 Boton buscar por ID
+11-12-2023 11:00:13 Conexión exitosa a la base de datos
+11-12-2023 11:00:14 Boton limpiar cajas
+11-12-2023 11:00:14 Boton agregar venta
+11-12-2023 11:12:11 Conexión exitosa a la base de datos
+11-12-2023 11:12:13 Conexión exitosa a la base de datos
+11-12-2023 11:12:13 Boton buscar por ID
+11-12-2023 11:12:16 Conexión exitosa a la base de datos
+11-12-2023 11:12:19 Boton limpiar cajas
+11-12-2023 11:12:19 Boton agregar venta
+11-12-2023 11:12:27 Conexión exitosa a la base de datos
+11-12-2023 11:12:27 Boton buscar por ID
+11-12-2023 11:12:29 Conexión exitosa a la base de datos
+11-12-2023 11:12:30 Boton limpiar cajas
+11-12-2023 11:12:30 Boton agregar venta
+11-12-2023 11:17:44 Conexión exitosa a la base de datos
+11-12-2023 11:17:46 Conexión exitosa a la base de datos
+11-12-2023 11:17:46 Boton buscar por ID
+11-12-2023 11:17:49 Conexión exitosa a la base de datos
+11-12-2023 11:17:51 Boton limpiar cajas
+11-12-2023 11:17:51 Boton agregar venta
+11-12-2023 11:18:58 Conexión exitosa a la base de datos
+11-12-2023 11:19:00 Conexión exitosa a la base de datos
+11-12-2023 11:19:00 Boton buscar por ID
+11-12-2023 11:19:03 Conexión exitosa a la base de datos
+11-12-2023 11:19:05 Boton limpiar cajas
+11-12-2023 11:19:05 Boton agregar venta
+11-12-2023 11:32:15 Conexión exitosa a la base de datos
+11-12-2023 11:32:16 Conexión exitosa a la base de datos
+11-12-2023 11:32:16 Boton buscar por ID
+11-12-2023 11:32:18 Conexión exitosa a la base de datos
+11-12-2023 11:32:19 Boton limpiar cajas
+11-12-2023 11:32:19 Boton agregar venta
+11-12-2023 11:32:41 Conexión exitosa a la base de datos
+11-12-2023 11:32:45 Conexión exitosa a la base de datos
+11-12-2023 11:32:45 Boton buscar por ID
+11-12-2023 11:32:46 Conexión exitosa a la base de datos
+11-12-2023 11:32:48 Boton limpiar cajas
+11-12-2023 11:32:48 Boton agregar venta
+11-12-2023 11:53:08 Conexión exitosa a la base de datos
+11-12-2023 11:53:56 Conexión exitosa a la base de datos
+11-12-2023 11:54:33 Conexión exitosa a la base de datos
+11-12-2023 11:54:33 Conexión exitosa a la base de datos
+11-12-2023 11:55:04 Conexión exitosa a la base de datos
+11-12-2023 11:55:04 Conexión exitosa a la base de datos
+11-12-2023 12:01:47 Conexión exitosa a la base de datos
+11-12-2023 12:01:47 Boton buscar por ID
+11-12-2023 12:01:52 Conexión exitosa a la base de datos
+11-12-2023 12:01:53 Boton limpiar cajas
+11-12-2023 12:01:53 Boton agregar venta
+11-12-2023 12:01:55 Conexión exitosa a la base de datos
+11-12-2023 12:01:55 Boton buscar por ID
+11-12-2023 12:01:58 Conexión exitosa a la base de datos
+11-12-2023 12:01:59 Boton limpiar cajas
+11-12-2023 12:01:59 Boton agregar venta
+11-12-2023 12:02:20 Conexión exitosa a la base de datos
+11-12-2023 12:02:20 Conexión exitosa a la base de datos
+11-12-2023 12:03:35 Conexión exitosa a la base de datos
+11-12-2023 12:03:35 Conexión exitosa a la base de datos
+11-12-2023 12:03:44 Conexión exitosa a la base de datos
+11-12-2023 12:03:44 Boton buscar por ID
+11-12-2023 12:03:46 Conexión exitosa a la base de datos
+11-12-2023 12:03:47 Boton limpiar cajas
+11-12-2023 12:03:47 Boton agregar venta
+11-12-2023 12:03:54 Conexión exitosa a la base de datos
+11-12-2023 12:03:54 Boton buscar por ID
+11-12-2023 12:03:57 Conexión exitosa a la base de datos
+11-12-2023 12:03:58 Boton limpiar cajas
+11-12-2023 12:03:58 Boton agregar venta
+11-12-2023 12:04:02 Conexión exitosa a la base de datos
+11-12-2023 12:04:02 Boton buscar por ID
+11-12-2023 12:04:04 Conexión exitosa a la base de datos
+11-12-2023 12:04:04 Boton buscar por ID
+11-12-2023 12:04:06 Conexión exitosa a la base de datos
+11-12-2023 12:04:07 Boton limpiar cajas
+11-12-2023 12:04:07 Boton agregar venta
+11-12-2023 12:04:11 Conexión exitosa a la base de datos
+11-12-2023 12:04:11 Boton buscar por ID
+11-12-2023 12:04:13 Conexión exitosa a la base de datos
+11-12-2023 12:04:14 Boton limpiar cajas
+11-12-2023 12:04:14 Boton agregar venta
+11-12-2023 12:04:16 Conexión exitosa a la base de datos
+11-12-2023 12:04:16 Boton buscar por ID
+11-12-2023 12:04:18 Conexión exitosa a la base de datos
+11-12-2023 12:04:18 Boton limpiar cajas
+11-12-2023 12:04:18 Boton agregar venta

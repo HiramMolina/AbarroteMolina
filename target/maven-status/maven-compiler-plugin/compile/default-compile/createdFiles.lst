@@ -1,4 +1,5 @@
 Conexion.class
+PantallaVenta$8.class
 PantallaInventario$7.class
 PantallaVenta$1.class
 Conexion$2.class
@@ -11,6 +12,7 @@ Conexion$1.class
 RegistroVentas.class
 PantallaInventario$3.class
 PantallaVenta$4.class
+PantallaVenta$7.class
 PantallaInicial$4.class
 PantallaInventario$10.class
 PantallaInventario$5.class
